@@ -6,7 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon avec des booléens</title>
   </head>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <body>
     <h1>Accordéon avec des booléens</h1>
+        <div class="accordeon">
+          <section><button{bouton $}+p><div x-data="{ open: false }">
+            <button @click="open = ! open">menu</button>
+              <p x-show="open== true"x-transition.duration.800ms>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, veniam quaerat. Culpa enim et nisi, aliquid libero deleniti ipsam eveniet obcaecati molestias pariatur laborum quas distinctio a in eligendi voluptates?</section>
+          <section><button{bouton $}+p><div x-data="{ open: false }">
+            <button @click="open = ! open">menu</button>
+              <p x-show="open== true"x-transition.duration.800ms>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, veniam quaerat. Culpa enim et nisi, aliquid libero deleniti ipsam eveniet obcaecati molestias pariatur laborum quas distinctio a in eligendi voluptates?</section>
+          <section><button{bouton $}+p><div x-data="{ open: false }">
+            <button @click="open = ! open">menu</button>
+              <p x-show="open== true"x-transition.duration.800ms>
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, veniam quaerat. Culpa enim et nisi, aliquid libero deleniti ipsam eveniet obcaecati molestias pariatur laborum quas distinctio a in eligendi voluptates?</section>
+        </div>
   </body>
 </html>
