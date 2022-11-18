@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
   </head>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <body>
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
   </body>
+    <div class="accordeon" x-data="{ open: 1 }">
+      <button @click="open =  1">menu 1</button>
+         <p x-show="open== 1"x-transition.scale.origine.top>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsam, dolorem quisquam quam esse ut, ducimus ab excepturi aut ea voluptas. Soluta cumque debitis harum atque delectus magni molestias voluptates?</p>
+      <button @click="open = 2">menu 2</button>
+          <p x-show="open== 2"x-transition.scale.origine.top>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus quis illum, earum deleniti, ab dolorem esse distinctio sapiente doloremque, recusandae ratione ad iusto. Officiis ea, tenetur quia excepturi praesentium culpa!</p>
+      <button @click="open = 3">menu 3</button>
+           <p x-show="open== 3"x-transition.scale.origine.top>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat ab corporis excepturi at placeat, totam autem voluptate ipsam nobis mollitia libero assumenda modi in veniam voluptates quod optio provident illo.</p>
 </html>
