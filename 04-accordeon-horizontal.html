@@ -5,8 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon horizontal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <link>
   </head>
   <body>
     <h1>Accordéon horizontal</h1>
   </body>
+
+  <ul id="accordeon" x-data="{
+    isOpen : 1,
+   }">
+    <li @click="isOpen=1" :class="{actif:isOpen === 1,}">
+      <figure>
+        <img src="https://picsum.photos/100?random=1" alt="" width="102">
+        <figcaption>
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </figcaption>
+      </figure>
+    </li>
+    <li @click="isOpen=2" :class="{actif:isOpen === 2,}">
+      <figure>
+        <img src="https://picsum.photos/100?random=2" alt="" width="102">
+        <figcaption>
+          <h3>Eaque, alias veritatis!</h3>
+          <p>Perspiciatis dolores asperiores velit eaque in!</p>
+        </figcaption>
+      </figure>
+    </li>
+    <li @click="isOpen=3" :class="{actif:isOpen === 3,}">
+      <figure>
+        <img src="https://picsum.photos/100?random=3" alt="" width="102">
+        <figcaption>
+          <h3>Voluptatum, quo modi!</h3>
+          <p>Consectetur consequuntur tenetur excepturi aliquam aperiam!</p>
+        </figcaption>
+      </figure>
+    </li>
+  </ul>
 </html>
