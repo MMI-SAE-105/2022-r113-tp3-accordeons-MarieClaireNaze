@@ -5,8 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Onglets</title>
+    <link rel="stylesheet" href="/2022-r113-tp3-accordeons-MarieClaireNaze/css/styleonglet.css">
   </head>
   <body>
     <h1>Onglets</h1>
+    <div id="onglets" x-data="{ouvert : 1,}">
+      <ul role="tablist" class="actif">
+        <li role="tab">Onglet 1</li>
+        <li role="tab">Onglet 2</li>
+        <li role="tab">Onglet 3</li>
+      </ul>
+
+      <div class="panneaux">
+        <div role="tabpanel" x-show="ouvert === 1">
+          <h1>Panneau 1</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum doloribus consequuntur, maiores odio, nostrum totam omnis voluptatibus commodi saepe, ratione enim! Nostrum enim vero reprehenderit. Fugiat quidem inventore exercitationem praesentium?</p>
+        </div>
+        <div role="tabpanel" x-show="ouvert === 2">
+          <h1>Panneau 2</h1>
+          <p>Nulla repellendus in illo dolor nam nostrum? Adipisci harum ducimus quam impedit aperiam! Ad aliquid id necessitatibus, quae beatae dolore ex unde eveniet minima ratione quibusdam explicabo fuga amet sed.</p>
+        </div>
+        <div role="tabpanel" x-show="ouvert === 3">
+          <h1>Panneau 3</h1>
+          <p>Praesentium alias perspiciatis harum, incidunt magnam aliquid impedit, assumenda voluptates ipsa ab fugiat repudiandae quibusdam molestias. Minus explicabo, ratione quos, rem, voluptas esse facilis dignissimos iure adipisci dolor tempore aperiam!</p>
+        </div>
+      </div>
+
   </body>
 </html>
