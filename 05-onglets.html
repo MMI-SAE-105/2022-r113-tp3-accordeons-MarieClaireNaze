@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ouvert=0}">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Onglets</title>
     <link rel="stylesheet" href="/2022-r113-tp3-accordeons-MarieClaireNaze/css/styleonglet.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <script src="js/script.js"></script>
+
+
   </head>
   <body>
     <h1>Onglets</h1>
-    <div id="onglets" x-data="{ouvert : 1,}">
+    <div id="onglets" x-data="{ouvert : 0,1,2,3}">
       <ul role="tablist" class="actif">
-        <li role="tab">Onglet 1</li>
-        <li role="tab">Onglet 2</li>
-        <li role="tab">Onglet 3</li>
+        <button><li role="tab" @click="ouvert= 1">Onglet 1</li></button>
+        <li role="tab" @click="ouvert= 2">Onglet 2</li>
+        <li role="tab" @click="ouvert= 3">Onglet 3</li>
       </ul>
 
       <div class="panneaux">
